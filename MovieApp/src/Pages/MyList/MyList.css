@@ -1,0 +1,19 @@
+html, body {
+    background-color: #000; /* Sayfanın her yerini siyah yap */
+    min-height: 100vh; /* Tüm sayfa boyunca devam etmesini sağla */
+    margin: 0;
+    padding: 0;
+}
+
+
+.my-list {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.my-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}

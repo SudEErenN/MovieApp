@@ -1,0 +1,5 @@
+export const API_KEY="041ba9b4e6a6c935047b4772495442f8"
+export const API_IMG ="https://image.tmdb.org/t/p/original"
+export const API_GENRE="https://api.themoviedb.org/3/genre/movie/list"
+export const API_MOVIE_LİST = "https://api.themoviedb.org/3/discover/movie"
+export const API_MOVIE_DETAIL = "https://api.themoviedb.org/3/movie"

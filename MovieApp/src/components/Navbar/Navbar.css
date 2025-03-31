@@ -20,14 +20,14 @@
     cursor: pointer;
 }
 
-.navbar.left:hover a{
+.navbar .left:hover a {
     color: #ffcc00;
 }
 
 .navbar .left a { 
     transition: all .2s linear;
     text-decoration: none;
-    color:red;
+    color:#ffffff;
 
 }
 
@@ -49,8 +49,8 @@
 
 }
 
-.navbar.right ul li{
-    cursor: pointer;
+.navbar .right ul li{
+    cursor:pointer;
 }
 
 .navbar .right li:first-child svg{

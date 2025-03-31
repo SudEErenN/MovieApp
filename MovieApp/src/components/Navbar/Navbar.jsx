@@ -3,11 +3,20 @@ import { PiFilmReelFill } from "react-icons/pi";
 import { TiHome } from "react-icons/ti";
 import { FaHeart } from "react-icons/fa";
 import './Navbar.css'
+import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+
+
+
 const Navbar = () => {
+
+  const favoriteCounter = useSelector(store => store.favorite.favoriteMovies.length)
+  
   return (
     <nav className='navbar'>
-        <div className='left'>
-            <h1>MovieApp</h1>
+        <div className='left'> 
+            <Link to="/"><h1>MovieApp</h1></Link>
+            
         </div>
 
         <div className='center'>
@@ -17,12 +26,15 @@ const Navbar = () => {
         <div className='right'>
             <ul>
                 <li>
-                <TiHome/>
-                </li>
-
+                  <Link to="/"><TiHome/></Link>
+                  </li>
                 <li>
-                <FaHeart/>
-                </li>
+                  <Link to="/my-list"><FaHeart/>
+                  <div className='favorite-count'>
+                    {favoriteCounter}
+                  </div>
+                  </Link>
+                  </li>
             </ul>
         </div>
 
